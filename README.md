@@ -1,24 +1,5 @@
-# print-qrcode
+# vue-typescript模板项目
 
-## Project setup
-```
-yarn install
-```
+> 使用vue+typescript+elementUI+axios做的初始模板项目
 
-### Compiles and hot-reloads for development
-```
-yarn serve
-```
-
-### Compiles and minifies for production
-```
-yarn build
-```
-
-### Lints and fixes files
-```
-yarn lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+配置文件`/src/config/*`
