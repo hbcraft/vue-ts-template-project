@@ -11,18 +11,3 @@ const API_PUBLIC_PATH = ''
 export const API_URL = `${API_HOST}:${API_PORT}${API_PUBLIC_PATH}`
 // 请求超时时间
 export const API_TIMEOUT = 30000
-
-/**
- * 响应配置
- */
-// 成功响应码列表
-export const SUCCESS_RESPONSE_CODE_LIST: ResponseCode = {
-  200: {}
-}
-
-// 失败响应码列表
-export const FAIL_RESPONSE_CODE_LIST: ResponseCode = {
-  404: {
-    message: '资源不存在'
-  }
-}

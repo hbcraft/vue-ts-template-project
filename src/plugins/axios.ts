@@ -1,5 +1,3 @@
-'use strict'
-
 import Vue from 'vue'
 import axios, { AxiosRequestConfig, AxiosResponse } from 'axios'
 
@@ -7,6 +5,7 @@ import {
   API_TIMEOUT,
   API_URL
 } from '@/config/axios'
+import validateResponseCode from '@/utils/validateResponseCode'
 
 // Full config:  https://github.com/axios/axios#request-config
 // axios.defaults.baseURL = process.env.baseURL || process.env.apiUrl || '';
@@ -40,6 +39,7 @@ _axios.interceptors.response.use(
     // 请求地址，不带baseURL
     const reqPath = res.config.url?.substring(config.baseURL!.length)
     console.log(reqPath)
+    validateResponseCode(res.data)
     return res.data
   },
   (error) => {
